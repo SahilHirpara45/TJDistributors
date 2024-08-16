@@ -1,0 +1,88 @@
+// If you want to override variables do it here
+@import 'variables';
+$enable-ltr: true;
+$enable-rtl: true;
+
+// Import CoreUI for React components library
+@import '@coreui/coreui/scss/coreui';
+
+// Import Chart.js custom tooltips styles
+@import '@coreui/chartjs/scss/coreui-chartjs';
+
+@import 'layout';
+@import 'example';
+
+// If you want to add custom CSS you can put it here.
+@import 'custom';
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700;900&display=swap');
+
+body {
+  font-family: 'Roboto';
+  .text_link {
+    text-decoration: none;
+  }
+}
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+.form-floating > .form-control:focus ~ label,
+.form-floating > .form-control:not(:placeholder-shown) ~ label,
+.form-floating > .form-select ~ label {
+  background-color: white !important;
+    top: -5px;
+    opacity: 1 !important;
+    left: 20px;
+    background: transparent;
+    height: auto;
+    margin-bottom: 0;
+    border: 0;
+}
+.form-floating .form-control:focus{
+  outline: none !important;
+  border-color: #dadada !important;
+  box-shadow: none !important;
+}
+.floating-password-input .input-group .form-floating{
+  width: 100%;
+}
+.floating-password-input .input-group .form-floating .form-control{
+  padding-right: 40px !important;
+}
+.floating-password-input .input-group{
+  position: relative;
+  width: 100%;
+}
+.floating-password-input .input-group .input-group-text {
+  position: absolute;
+  top: calc(50% - 8px);
+  right: 16px;
+  padding: 0;
+}
+.form-floating > .form-control{
+  padding: 15px !important;
+}
+.form-floating > .form-control:not(:placeholder-shown){
+  padding: 15px !important;
+}
+.form-floating > label{
+  padding: 6px 10px!important;
+  top: 10px;
+  margin: 0;
+  height: auto;
+}
+@media (min-width: 1200px) {
+  h4 {
+    font-size: 18px !important;
+  }
+  // .form-control,
+  .form-select {
+    height: 40px !important;
+  }
+}
